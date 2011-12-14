@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- include JQMobile -->
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+  <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+  <!-- include plugin -->
+  <script src="./jquery.mobile.confirmlinks.min.js"></script>
+</head>
+<body>
+  <div data-role="page" data-title="JQMobile LinksConfirm" data-theme="c" id="linksConfirm">
+    <div data-role="header" data-theme="c">
+      <h1>Example JQMobile LinksConfirm</h1>
+    </div> 
+    <div data-role="content" data-theme="c">
+      <div>
+        <a href="#noConfirm" data-rel="dialog" data-transition="pop" data-role="button" data-icon="delete">This link with no confirm</a>
+      </div>
+      <div>
+        <a href="#withConfirm" data-confirm="Are you sure?" data-rel="dialog" data-transition="pop" data-role="button" data-icon="ok">This link should be with confirmation</a>
+      </div>
+    </div>
+    <div data-role="footer" class="footer" data-theme="c">
+      <div><small>Evgenii.S.Semenchuk (github.com/evgenii)</small></div>
+      <div><small><a href="http://github.com/evgenii/jQueryMobile.confirmlinks">github.com/evgenii/jQueryMobile.confirmlinks</a></small></div>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- noConfirm -->
+<div data-role="page" data-title="noConfirm" id="noConfirm" data-theme="a">
+  <div data-role="content" data-theme="b">
+    <h1>NoConfirm</h1>
+    <p>No conform link</p>
+    <a href="#" data-rel="back" data-role="button" data-icon="back">Back</a>
+  </div>
+</div>
+
+<!-- withConfirm -->
+<div data-role="page" data-title="withConfirm" id="withConfirm" data-theme="a">
+  <div data-role="content" data-theme="b">
+    <h1>withConfirm</h1>
+    <p>Link with confirm before action</p>
+    <a href="#" data-rel="back" data-role="button" data-icon="back">Back</a>
+  </div>
+</div>
